@@ -6,6 +6,10 @@ const app = express();
 
 app.use(express.json());
 
+const cors = require('cors')
+app.use(cors())
+
+
 const cars = require('./cars.json');
 
 //get all cars
